@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Anchors</title>
+</head>
+<body>
+<div id="open"style="padding: 1em; border: 3px solid black;
+font-size: 300%;">We are open</div>
+<div id="closed" style="padding: 1em; border: 3px solid black;
+font-size: 300%;”>We are closed</div>
+<script src="jquery.js"></script>
+<script type="text/javascript" charset="utf-8">
+$(function () {
+$("#closed").hide();
+$("#open, #closed").click(function (event) {
+$("#open, #closed").toggle();
+});
+});
+</script>
+</body>
+</html>
